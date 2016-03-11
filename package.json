@@ -1,0 +1,23 @@
+{
+  "name": "tutorial-es6-mortgage-calculator",
+  "version": "1.0.0",
+  "description": "Start the tutorial [here](http://ccoenraets.github.io/es6-tutorial).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriskwan/tutorial-es6-mortgage-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriskwan/tutorial-es6-mortgage-calculator/issues"
+  },
+  "homepage": "https://github.com/chriskwan/tutorial-es6-mortgage-calculator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.2"
+  }
+}
