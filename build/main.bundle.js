@@ -48,4 +48,10 @@ document.getElementById('calcBtn').addEventListener('click', function () {
     amortization.forEach(function (month) {
         return console.log(month);
     });
+
+    var html = "";
+    amortization.forEach(function (year, index) {
+        return html += '\n        <tr>\n            <td>' + (index + 1) + '</td>\n            <td class="currency">' + Math.round(year.principalY) + '</td>\n            <td class="stretch">\n                <div class="flex">\n                    <div class="bar principal"\n                        style="flex:' + year.principalY + ';-webkit-flex:' + year.principalY + '">\n                    </div>\n                    <div class="bar interest"\n                        style="flex:' + year.interestY + ';-webkit-flex:' + year.interestY + '">\n                    </div>\n                </div>\n            </td>\n            <td class="currency left">' + Math.round(year.interestY) + '</td>\n            <td class="currency">' + Math.round(year.balance) + '</td>\n        </tr>\n    ';
+    });
+    document.getElementById("amortization").innerHTML = html;
 });
